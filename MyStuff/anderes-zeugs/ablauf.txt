@@ -1,0 +1,18 @@
+Fragen nach namen / vorwissen
+auffordern mitzuschreiben zum lernen von muscle memory 
+
+-print("Hello World") => methoden/varaiblen einführen
+-print Hello world mit variablen und string concat
+-int/float variablen assignment und typen erklären
+-listen einführen => string auch liste von chars 
+
+Input() zeigen
+Programm bauen was Eingabe um 1 addiert => Typ conversation 
+
+-while schleife einführen => input viele input ausgeben 
+-for schleife einführen, quadrat auf console ausgeben => variable großes quadrat?
+-if einführen => dreieck gestreift?
+
+-schüler überlegen lassen wie man ein dreieck ausgibt => for schleife und varaiblen assignment kombinieren
+
+# TODO: Python syntax => (indend, symbols), Classes

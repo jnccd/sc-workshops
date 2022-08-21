@@ -1,0 +1,9 @@
+Software Challenge Germany
+
+Joanna Haag
+
+Einführung in die Programmierung mit Python
+
+Wir zeigen euch problemorientiert die wichtigsten Konzepte der Programmierung und bauen, wenn genug Zeit da ist, ein kleines 2D Spiel.
+Außerdem zeigen wir euch die Software Challenge, ein Wettberwerb für Schüler in dem ihr eine künstliche Intelligenz für ein Brettspiel bauen könnt, welche gegen die KIs von anderen Schulen spielt.
+
