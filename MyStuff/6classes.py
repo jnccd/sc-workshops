@@ -12,12 +12,12 @@ def print_hp(enemy1, enemy2):
     print(enemy2.name + ": " + str(enemy2.hp))
 
 
-albert = Actor("Albert", 5)
-gandalf = Actor("Gandalf", 10)
+link = Actor("Link", 5)
+bokoblin = Actor("Bokoblin", 10)
 
 
-print_hp(albert, gandalf)
+print_hp(link, bokoblin)
 
-gandalf.hit(albert)
+link.hit(bokoblin)
 
-print_hp(albert, gandalf)
+print_hp(link, bokoblin)
