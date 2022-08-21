@@ -15,4 +15,8 @@ Programm bauen was Eingabe um 1 addiert => Typ conversation
 
 -schüler überlegen lassen wie man ein dreieck ausgibt => for schleife und varaiblen assignment kombinieren
 
-# TODO: Python syntax => (indend, symbols), Classes
+# TODO: Python syntax => (indend, symbols)
+
+
+---------------------------------------------------------------------------
+
