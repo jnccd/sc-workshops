@@ -12,8 +12,8 @@ def print_hp(actor1, actor2):
     print(actor2.name + ": " + str(actor2.hp))
 
 
-link = Actor("Link", 5)
-bokoblin = Actor("Bokoblin", 10)
+link = Actor("Link", 10)
+bokoblin = Actor("Bokoblin", 5)
 
 
 print_hp(link, bokoblin)
