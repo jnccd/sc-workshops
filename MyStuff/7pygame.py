@@ -1,9 +1,7 @@
 import pygame, sys
 
 pygame.init()
-width = 1280
-height = 720
-screen = pygame.display.set_mode((width, height))
+screen = pygame.display.set_mode((1280, 720))
 
 while True:
     for event in pygame.event.get():

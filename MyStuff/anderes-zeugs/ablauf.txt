@@ -20,3 +20,11 @@ Programm bauen was Eingabe um 1 addiert => Typ conversation
 
 ---------------------------------------------------------------------------
 
+-Software Challenge Zeugs: 
+  randomclient zeigen 
+  -> für weitergehende strategie empfehlen: 
+    for each zug { 
+        zug performen, 
+        checken wie gut board ist -> 
+          Bewertungsfunktion 
+    }
