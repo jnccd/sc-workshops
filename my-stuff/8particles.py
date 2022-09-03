@@ -24,14 +24,14 @@ class Particle:
             
         self.vel *= 0.96
         
-    def getPulledTo(self, target_vec):
-        diff = self.pos - target_vec
+    def get_pulled_to(self, target_vec):
+        diff = self.pos - target_vec + Vector2(5,-5)
         if (diff.length_squared() > 0):
             self.vel -= diff * (200 / (diff*diff))
 
 particles = []
-for x in range(0, screen.get_width(), 5):
-    for y in range(0, screen.get_height(), 5):
+for x in range(0, screen.get_width(), 8):
+    for y in range(0, screen.get_height(), 8):
         particles.append(Particle(x, y))
 
 while True:
@@ -43,7 +43,7 @@ while True:
             sys.exit()
     if pygame.mouse.get_pressed(3)[0]:
         for p in particles:
-                p.getPulledTo(pygame.mouse.get_pos())
+            p.get_pulled_to(pygame.mouse.get_pos())
     
     # Logic
     for p in particles:
