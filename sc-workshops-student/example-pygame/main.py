@@ -111,7 +111,7 @@ class Player(Entity):
     
     def draw(self):
         cur_sprite = clip(self.tex, 0, 0, tex_s.x, tex_s.y)
-        scaled_tex = pygame.transform.scale(cur_sprite, self.size)
+        scaled_tex = pygame.transform.scale(cur_sprite, (int(self.size.x), int(self.size.y)))
         display.blit(scaled_tex, self.pos)
         
 class Enemy(Entity):
@@ -124,7 +124,7 @@ class Enemy(Entity):
     
     def draw(self):
         cur_sprite = clip(self.tex, 0, 0, tex_s.x, tex_s.y)
-        scaled_tex = pygame.transform.scale(cur_sprite, self.size)
+        scaled_tex = pygame.transform.scale(cur_sprite, (int(self.size.x), int(self.size.y)))
         display.blit(scaled_tex, self.pos)
         
 #-----------------------------------------------------------------------------------------------------------------------------------
@@ -135,7 +135,7 @@ class Enemy(Entity):
 global score
 global entities
 player = Player()
-entities: List[Entity] = [player]
+entities = [player]
 score = 0
 
 # Timings
