@@ -30,8 +30,8 @@ class Particle:
             self.vel -= diff * (200 / (diff*diff))
 
 particles = []
-for x in range(0, screen.get_width(), 8):
-    for y in range(0, screen.get_height(), 8):
+for x in range(0, screen.get_width(), 12):
+    for y in range(0, screen.get_height(), 12):
         particles.append(Particle(x, y))
 
 while True:
