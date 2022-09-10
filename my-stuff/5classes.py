@@ -13,11 +13,11 @@ def print_hp(actor1, actor2):
 
 
 link = Actor("Link", 10)
-bokoblin = Actor("Bokoblin", 5)
+blin = Actor("Blin", 5)
 
 
-print_hp(link, bokoblin)
+print_hp(link, blin)
 
-link.hit(bokoblin)
+link.hit(blin)
 
-print_hp(link, bokoblin)
+print_hp(link, blin)
