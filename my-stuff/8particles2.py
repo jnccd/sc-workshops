@@ -25,7 +25,7 @@ class Particle:
         self.vel *= 0.96
         
     def get_pulled_to(self, target_vec):
-        diff = self.pos - target_vec + Vector2(5,-5)
+        diff = self.pos - target_vec
         if (diff.length_squared() > 0):
             self.vel -= diff * (200 / (diff*diff))
 
