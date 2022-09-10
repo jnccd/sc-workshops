@@ -1,6 +1,4 @@
-from socha.api.networking.player_client import IClientHandler
-from socha.api.plugin.penguins import *
-from socha.starter import Starter
+from socha import *
 
 class Logic(IClientHandler):
     gameState: GameState
