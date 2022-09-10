@@ -1,15 +1,24 @@
-import random
-
-from socha.starter import Starter
-from socha.api.networking.player_client import IClientHandler
-from socha.api.plugin.penguins import GameState, Move
+from socha import *
 
 class Logic(IClientHandler):
     gameState: GameState
 
     def calculate_move(self) -> Move:
-        mostFish = self.gameState.get_most_fish_moves()
-        return mostFish[random.randint(0, len(mostFish) - 1)]
+        moves = self.gameState.possible_moves
+        
+        bestmove = None
+        bestscore = -1
+        for m in moves:
+            future_state: GameState = self.gameState.perform_move(m)
+            
+            score = 0
+            score += future_state.fishes.get_fish_by_team(self.gameState.current_team)
+            
+            if score > bestscore:
+                bestscore = score
+                bestmove = m
+        
+        return bestmove
 
     def on_update(self, state: GameState):
         self.gameState = state
@@ -19,4 +28,4 @@ class Logic(IClientHandler):
 
 
 if __name__ == "__main__":
-    Starter("Localhost", 13050, Logic())
+    Starter(Logic(), "localhost", 13050)
