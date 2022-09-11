@@ -23,9 +23,5 @@ class Logic(IClientHandler):
     def on_update(self, state: GameState):
         self.gameState = state
 
-    def on_error(self, logMessage: str):
-        ...
-
-
 if __name__ == "__main__":
-    Starter(Logic(), "localhost", 13050)
+    Starter(Logic())
